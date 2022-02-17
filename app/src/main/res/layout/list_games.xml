@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/greyLight"
+    android:id="@+id/game_container"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView_game"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+        <TextView
+            android:id="@+id/textView_game_name"
+            android:text="Grand Theft Auto"
+            android:fontFamily="@font/play_bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textAlignment="textStart"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_game_category"
+            android:text="PC (Windows)"
+            android:fontFamily="@font/play_regular"
+            android:textSize="18sp"
+            android:textColor="@color/sand"
+            android:textAlignment="textStart"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_game_desc"
+            android:text="Grand Theft Auto"
+            android:fontFamily="@font/play_regular"
+            android:textSize="18sp"
+            android:textColor="@color/sand"
+            android:textAlignment="textStart"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

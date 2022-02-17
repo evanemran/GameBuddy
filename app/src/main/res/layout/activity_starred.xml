@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/grey"
+    tools:context=".StarredActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView_details_name"
+            android:text="Saved Games"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/play_bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_saved"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/toolbar"
+        tools:listitem="@layout/list_games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView_no_saved"
+        android:text="No Saved Games"
+        android:textAlignment="center"
+        android:textColor="@color/sand"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/play_bold"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/greyLight"
+    app:cardElevation="8dp"
+    android:id="@+id/card_container"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="8dp">
+    <TextView
+        android:id="@+id/textView_cat"
+        android:text="Shooter"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.cardview.widget.CardView>

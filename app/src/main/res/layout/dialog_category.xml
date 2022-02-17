@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Select Category"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:fontFamily="@font/play_bold"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_category"
+                android:layout_margin="16dp"
+                tools:listitem="@layout/list_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/button_select"
+                android:text="Proceed"
+                android:textColor="@color/white"
+                android:fontFamily="@font/play_regular"
+                android:backgroundTint="@color/blue"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/button_cancel"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:fontFamily="@font/play_regular"
+                android:backgroundTint="@color/red"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
